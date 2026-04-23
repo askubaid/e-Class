@@ -15,8 +15,10 @@ const JoinRoom = () => {
     setLoading(true);
     setError('');
 
+    const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001';
+
     try {
-      const response = await fetch('http://localhost:3001/api/join-room', {
+      const response = await fetch(`${backendUrl}/api/join-room`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ pin, participantName: name }),

@@ -7,7 +7,7 @@ import VideoRoom from './pages/VideoRoom';
 
 function App() {
   return (
-    <Router basename="/VideoCon">
+    <Router basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/create" element={<CreateRoom />} />

@@ -14,6 +14,9 @@ function App() {
         <Route path="/join" element={<JoinRoom />} />
         <Route path="/room" element={<VideoRoom />} />
       </Routes>
+      <footer>
+        <p>Developed by <strong>Ubaid Ur Rehman</strong>. Student @ Institute of Space Technology Islamabad.</p>
+      </footer>
     </Router>
   );
 }

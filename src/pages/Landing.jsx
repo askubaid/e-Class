@@ -7,7 +7,7 @@ const Landing = () => {
   return (
     <div className="container flex-center" style={{ minHeight: '100vh' }}>
       <div className="glass-card animate-fade-in" style={{ textAlign: 'center', maxWidth: '600px' }}>
-        <h1>VideoCon</h1>
+        <h1>e-Class</h1>
         <p className="text-dim" style={{ fontSize: '1.2rem', marginBottom: '2.5rem' }}>
           Simplified video conferencing for the modern classroom. 
           No clutter, just connection.
@@ -17,7 +17,6 @@ const Landing = () => {
           <button 
             onClick={() => navigate('/create')}
             style={{ 
-              background: 'linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%)',
               padding: '2rem 1.5rem',
               height: 'auto',
               display: 'flex',
@@ -26,16 +25,17 @@ const Landing = () => {
               gap: '1rem'
             }}
           >
-            <span style={{ fontSize: '1.5rem' }}>👨‍🏫</span>
-            <span>I'm a Teacher</span>
-            <small style={{ opacity: 0.8, fontWeight: 400 }}>Create a new class</small>
+            <span style={{ fontSize: '2rem' }}>👨‍🏫</span>
+            <span style={{ fontSize: '1.1rem' }}>I'm a Teacher</span>
+            <small style={{ opacity: 0.9, fontWeight: 400 }}>Create a new class</small>
           </button>
 
           <button 
             onClick={() => navigate('/join')}
             style={{ 
-              background: 'rgba(255, 255, 255, 0.05)',
-              border: '1px solid var(--glass-border)',
+              background: '#ffffff',
+              border: '1px solid var(--border)',
+              color: 'var(--text-main)',
               padding: '2rem 1.5rem',
               height: 'auto',
               display: 'flex',
@@ -44,9 +44,9 @@ const Landing = () => {
               gap: '1rem'
             }}
           >
-            <span style={{ fontSize: '1.5rem' }}>🎓</span>
-            <span>I'm a Student</span>
-            <small style={{ opacity: 0.8, fontWeight: 400 }}>Join with a PIN</small>
+            <span style={{ fontSize: '2rem' }}>🎓</span>
+            <span style={{ fontSize: '1.1rem' }}>I'm a Student</span>
+            <small style={{ opacity: 0.9, fontWeight: 400 }}>Join with a PIN</small>
           </button>
         </div>
       </div>

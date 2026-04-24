@@ -39,11 +39,11 @@ const JoinRoom = () => {
   };
 
   return (
-    <div className="container flex-center" style={{ minHeight: '100vh' }}>
+    <div className="container flex-center">
       <div className="glass-card animate-fade-in" style={{ width: '100%', maxWidth: '450px' }}>
         <button 
           onClick={() => navigate('/')} 
-          style={{ background: 'none', border: 'none', padding: 0, color: 'var(--text-dim)', marginBottom: '1.5rem', cursor: 'pointer' }}
+          style={{ background: 'none', border: 'none', padding: 0, color: 'var(--text-dim)', marginBottom: '1.5rem', cursor: 'pointer', boxShadow: 'none', width: 'auto' }}
         >
           ← Back
         </button>
@@ -53,7 +53,7 @@ const JoinRoom = () => {
 
         <form onSubmit={handleJoin} style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
           <div>
-            <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>Class PIN</label>
+            <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem', fontWeight: 600 }}>Class PIN</label>
             <input 
               type="text" 
               placeholder="e.g. 123456" 
@@ -65,7 +65,7 @@ const JoinRoom = () => {
           </div>
 
           <div>
-            <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>Your Name</label>
+            <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem', fontWeight: 600 }}>Your Name</label>
             <input 
               type="text" 
               placeholder="Enter your full name" 
@@ -75,12 +75,12 @@ const JoinRoom = () => {
             />
           </div>
 
-          {error && <p style={{ color: '#f87171', fontSize: '0.9rem', margin: 0 }}>{error}</p>}
+          {error && <p style={{ color: '#d93025', fontSize: '0.9rem', margin: 0 }}>{error}</p>}
 
           <button 
             type="submit" 
             disabled={loading}
-            style={{ padding: '1rem' }}
+            style={{ padding: '0.8rem' }}
           >
             {loading ? 'Joining...' : 'Enter Classroom'}
           </button>

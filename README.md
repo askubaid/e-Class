@@ -1,10 +1,9 @@
-# e-Class: Professional Video Conferencing Platform
+# e-Class: An app for online classes. Developed at IST.
 
 A modern, high-fidelity video conferencing application designed for educational environments. Built with React, Vite, and LiveKit, **e-Class** provides a seamless, light-themed experience with a focus on usability and classroom management.
 
-🚀 **Live Demo:** [https://video-con-beta.vercel.app/](https://video-con-beta.vercel.app/)
-
 ---
+Demo link: https://askubaid.github.io/e-Class/
 
 ## ✨ Key Features
 

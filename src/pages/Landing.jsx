@@ -27,7 +27,7 @@ const Landing = () => {
               gap: '1rem'
             }}
           >
-            <span><img src="/teacher-icon.png" alt="teacher" style={{ width: '100px', height: '100px', objectFit: 'contain' }} /> </span>
+            <span><img src={`${import.meta.env.BASE_URL}teacher-icon.png`} alt="teacher" style={{ width: '100px', height: '100px', objectFit: 'contain' }} /> </span>
             <span style={{ fontSize: '1.1rem' }}>I'm a Teacher</span>
             <small style={{ opacity: 0.9, fontWeight: 400 }}>Create a new class</small>
           </button>
@@ -46,7 +46,7 @@ const Landing = () => {
               gap: '1rem'
             }}
           >
-            <span><img src="/student-icon.png" alt="student" style={{ width: '100px', height: '100px', objectFit: 'contain' }} /></span>
+            <span><img src={`${import.meta.env.BASE_URL}student-icon.png`} alt="student" style={{ width: '100px', height: '100px', objectFit: 'contain' }} /></span>
             <span style={{ fontSize: '1.1rem' }}>I'm a Student</span>
             <small style={{ opacity: 0.9, fontWeight: 400 }}>Join with a PIN</small>
           </button>

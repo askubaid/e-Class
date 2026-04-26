@@ -38,7 +38,7 @@ Demo link: https://askubaid.github.io/e-Class/
 - **Frontend:** React 18 + Vite
 - **Styling:** Vanilla CSS (Custom Design System)
 - **Communication:** LiveKit SDK (WebRTC)
-- **Deployment:** Vercel / Render
+- **Deployment:** GitHub Pages / Render
 
 ---
 
@@ -84,12 +84,24 @@ Demo link: https://askubaid.github.io/e-Class/
 
 ## ⚠️ Limitations
 
-Since I am using LiveKit Cloud "Build" (Free) tier for this project, the following limitations apply:
+This project utilizes free tiers for its infrastructure. Please note the following limitations:
+
+### 🎙️ LiveKit Cloud (Free Tier)
 - **Maximum 100 Concurrent Connections:** Across the entire project.
 - **5,000 WebRTC Minutes per Month:** A 60-minute class with 10 students consumes 600 minutes.
 - **50 GB Monthly Data Transfer:** Depends heavily on camera usage and screen sharing.
 
-If these limits are exceeded, new connections will be rejected until the monthly cycle resets.
+### ⚙️ Render Backend (Free Tier)
+- **Service Spin-Down:** The backend server automatically goes to sleep after 15 minutes of inactivity.
+- **Cold Starts:** The first request after a spin-down can take 30-60 seconds to respond.
+- **Usage Limit:** 750 free instance hours per month.
+
+### 🌐 GitHub Pages (Frontend Hosting)
+- **Soft Bandwidth Limit:** 100 GB per month.
+- **Site Size Limit:** Maximum 1 GB.
+- **Deployment Timeout:** Deployments may timeout if they take longer than 10 minutes.
+
+If these limits are exceeded (especially LiveKit minutes), the service may become temporarily unavailable until the monthly cycle resets.
 
 ---
 
